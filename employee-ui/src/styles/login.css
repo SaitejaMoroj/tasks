@@ -1,0 +1,77 @@
+@reference "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background Container */
+.login-container {
+  @apply min-h-screen flex items-center justify-center p-6;
+  background: linear-gradient(135deg, #0f172a, #1e40af);
+}
+
+
+/* Login Card */
+.login-card {
+  @apply bg-white shadow-2xl rounded-2xl px-10 py-6 w-full max-w-md;
+  overflow: hidden;
+}
+
+
+/* Logo Area (bigger logo without pushing form down too much) */
+.logo-wrapper {
+  @apply flex justify-center items-center;
+  height: 100px;
+}
+
+.login-logo {
+  @apply w-[280px] h-auto object-contain;
+}
+
+/* Titles */
+.login-title {
+  @apply text-2xl font-bold text-center text-gray-800 mt-1;
+}
+
+.login-subtitle {
+  @apply text-center text-sm text-gray-500 mb-4;
+}
+
+/* Labels */
+.login-label {
+  @apply block text-sm font-medium text-gray-600 mb-1;
+}
+
+/* Inputs */
+.login-input {
+  @apply w-full px-4 py-2 border rounded-lg
+         focus:outline-none focus:ring-2 focus:ring-blue-600;
+}
+
+/* Remember + Forgot row */
+.login-row {
+  @apply flex items-center justify-between text-sm;
+}
+
+/* Button */
+.login-button {
+  @apply w-full bg-blue-700 text-white py-2 rounded-lg 
+         hover:bg-blue-800 transition;
+}
+
+/* Links */
+.login-link {
+  @apply text-blue-700 hover:underline;
+}
+
+/* Footer */
+.login-footer {
+  @apply mt-6 border-t pt-4;
+}
+
+.brand-text {
+  @apply text-center text-xs text-gray-500;
+}
+
+.version-text {
+  @apply text-xs text-center text-gray-400;
+}
